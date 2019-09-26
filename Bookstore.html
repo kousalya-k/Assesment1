@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>BookStore</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar  centered navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand p" href="#">
+                <img src="https://www.thechildrensbookreview.com/wp-content/uploads/2016/08/tcbr-round-fb.png"
+                    height="10%" width="15%" alt="BookLogo"> good Reads</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0 ml-auto form">
+                <div>
+                    <input class="form-control ml-sm-2" type="email" placeholder="email" aria-label="Search"><br>
+                    <input type="checkbox">Remember me</div>
+                <div>
+                    <input class="form-control ml-sm-2" type="password" placeholder="password" aria-label="Search"><br>
+                    Forgot?</div>
+                <div style="margin-left: 10px;">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Sign In<br></button></div>
+            </form>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">New Here! Please SignUp</h1>
+            <form class="form-inline my-2 my-lg-0 ml-auto" >
+             <div class="form group">
+                <label>Email address</label>
+                <input type="email" class="form-control" placeholder="Enter email"><br />
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password"><br /><br>
+                <button type="submit" class="btn btn-primary">Sign Up<i class="fa fa-sign-in"></i></button>
+            </form>
+        </div></div>
+        <div class="card-deck">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\alchemist.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Alchemist</h3>
+                            <p> by </p>
+                            <a href="#"> Paulo Coelho </a>
+                            <p><b> Price 150</b></p>
+                            <p>Paulo Coelho's enchanting novel has inspired a devoted following around the world.
+                                This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an
+                                Andalusian shepherd boy named Santiago who travels
+                                from his homeland in Spain to the Egyptian desert in search of a treasure buried near
+                                the Pyramids. </p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\gatsby.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Great Gatsby</h3>
+                            <p> by </p>
+                            <a href="#"> F. Scott Fitzgerald</a>
+                            <p><b> Price 200</b></p>
+                            <p>
+                                The Great Gatsby, F. Scott Fitzgerald's third book, stands as the suprem
+                                e achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by
+                                generations of readers. The story is of the fabulously wealthy Jay Gatsby and his new
+                                love for the beautiful Daisy Buchanan, of lavish parties on Long Island.
+
+
+
+                            </p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\1984.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">1984</h3>
+                            <p> by </p>
+                            <a href="#"> George Orwell </a>
+                            <p><b> Price 180</b></p>
+                            <p>Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that
+                                grows more
+                                haunting as its futuristic purgatory becomes more real. Published in 1949, the book
+                                offers political satirist George Orwell's nightmarish vision of a totalitarian,
+                                bureaucratic world and one poor stiff's attempt to find individuality. </p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\oldman.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Old Man and the Sea</h3>
+                            <p> by </p>
+                            <a href="#"> Ernest Hemingway </a>
+                            <p><b> Price 200</b></p>
+                            <p>The last novel Ernest Hemingway saw published, The Old Man and the Sea has proved itself
+                                to be one of the enduring works of American fiction.
+                                It is the story of an old Cuban fisherman and his supreme ordeal: a relentless</p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> select</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\hobbit.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Hobbit There and Back Again</h3>
+                            <p> by </p>
+                            <a href="#"> J.R.R. Tolkien </a>
+                            <p><b> Price 300</b></p>
+                            <p>Written for J.R.R. Tolkien’s own children, The Hobbit met with instant critical acclaim
+                                when it was first published in 1937. Now recognized as a timeless classic,
+                                this introduction to the hobbit Bilbo Baggins, the wizard Gandalf, Gollum, </p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\orient.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Murder on the Orient Express</h3>
+                            <p> by </p>
+                            <a href="#"> Agatha Christie </a>
+                            <p><b> Price 250</b></p>
+                            <p>Le train est aussi dangereux que le paquebot » affirme Hercule Poirot…
+                                Le lendemain, dans une voiture
+                                de l’Orient-Express bloqué par les neiges yougoslaves, on découvre le cadavre d’un
+                                américain lardé.</p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\price.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Little Prince</h3>
+                            <p> by </p>
+                            <a href="#"> Antoine de Saint-Exupéry </a>
+                            <p><b> Price 150</b></p>
+                            <p>Moral allegory and spiritual autobiography, The Little Prince is the most translated book
+                                in the French language. With a timeless
+                                charm it tells the story of a little boy who leaves the safety of his own tiny planet to
+                                travel the universe</p>
+
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\meta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Metamorphosis</h3>
+                            <p> by </p>
+                            <a href="#"> George Orwell </a>
+                            <p><b> Price 3500</b></p>
+                            <p>"As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his
+                                bed into a gigantic insect.
+                                He was laying on his hard, as it were armor-plated, back and when he lifted his head a
+                                little.</p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\blade.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Alchemist</h3>
+                            <p> by </p>
+                            <a href="#"> Paulo Coelho </a>
+                            <p><b> Price 150</b></p>
+                            <p>Paulo Coelho's enchanting novel has inspired a devoted following around the world.
+                                This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an
+                                Andalusian shepherd boy named Santiago who travels
+                                from his homeland. <button type="button" class="btn btn-primary" onclick="modal1()"
+                                    id="order" data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\chess.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">The Great Gatsby</h3>
+                            <p> by </p>
+                            <a href="#"> F. Scott Fitzgerald</a>
+                            <p><b> Price 200</b></p>
+                            <p>
+                                The Great Gatsby, F. Scott Fitzgerald's third book, stands as the suprem
+                                e achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by
+                                generations of readers. The story is of the fabulously wealthy Jay Gatsby and his new
+                                love for the beautiful Daisy Buchanan, of lavish parties on Long Island.
+
+
+
+                            </p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\sherlock.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">1984</h3>
+                            <p> by </p>
+                            <a href="#"> George Orwell </a>
+                            <p><b> Price 180</b></p>
+                            <p>Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that
+                                grows more
+                                haunting as its futuristic purgatory becomes more real. Published in 1949, the book
+                                offers political satirist George Orwell's nightmarish vision of a totalitarian,
+                                bureaucratic world and one poor stiff's attempt to find individuality. </p>
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="C:\Users\kk98\Desktop\New folder\images\time.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" id="name">The Time Machine</h3>
+                            <p> by </p>
+                            <a href="#"> H.G.Wells</a>
+                            <p><b> Price 450</b></p>
+                            <p>So begins the Time Traveller’s astonishing firsthand account of his journey 800,000 years
+                                beyond his own era—and
+                                the story that launched H.G. Wells’s successful career and earned him his reputation</p>
+
+                            <button type="button" class="btn btn-primary" onclick="modal1()" id="order"
+                                data-toggle="modal" data-target="#order1"> Select</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="order1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Name of the Book</h5>
+                        <p id=name></p>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="modal2" data-dismiss="modal"
+                                onclick="modal2()">Add to cart</button>
+                            <button type="button" class="btn btn-primary" onclick="address()" data-dismiss="modal">Save
+                                changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Invoice</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <input type="text">Address1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             
+             <div class="row" style="margin-top: 20px;
+        background-color: black;
+        color:white;">
+      <div class="col-md-2">
+        <h5>US</h5>
+        <a href="#"> About</a><br>
+        <a href="#"> Announcements</a><br>
+        <a href="#"> Community forums</a><br>
+        <a href="#"> Get involved</a><br>
+        <a href="https://moodle.org/news"> Partners</a><br>
+    <a href="#"> M Users Association</a><br>
+      
+      </div>
+      </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
